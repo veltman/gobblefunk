@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+var gobblefunk = require("../"),
+    es = require("event-stream"),
+    fs = require("fs");
+
+if (process.stdin.isTTY) {
+
+  if (!process.argv[2]) {
+    throw new Error("Input file required");
+  }
+
+  fs.readFile(process.argv[2], done);
+
+} else {
+
+  process.stdin.pipe(es.wait(done));
+
+}
+
+function done(err, src){
+
+  if (err) {
+    throw err;
+  }
+
+  if (Buffer.isBuffer(src)) {
+    src = src.toString();
+  }
+
+  console.log(gobblefunk(src.toString()));
+
+}

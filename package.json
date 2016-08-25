@@ -1,0 +1,33 @@
+{
+  "name": "gobblefunk",
+  "version": "1.0.0",
+  "description": "Rename all your variables with Seussian names.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/veltman/gobblefunk.git"
+  },
+  "bin": {
+    "gobblefunk": "./bin/gobblefunk"
+  },
+  "author": "Noah Veltman (@veltman)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veltman/gobblefunk/issues"
+  },
+  "homepage": "https://github.com/veltman/gobblefunk",
+  "dependencies": {
+    "babel-generator": "^6.11.4",
+    "babel-traverse": "^6.13.0",
+    "babylon": "^6.9.0",
+    "event-stream": "^3.3.4",
+    "foswig": "^1.1.1"
+  },
+  "devDependencies": {
+    "require-from-string": "^1.2.0",
+    "tape": "^4.6.0"
+  }
+}
