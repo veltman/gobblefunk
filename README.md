@@ -1,5 +1,7 @@
 # Gobblefunk
 
+[![Build Status](https://travis-ci.org/veltman/gobblefunk.svg?branch=master)](https://travis-ci.org/veltman/gobblefunk)
+
 Rename all the variables in a JavaScript file with a Markov chain based on silly words from Dr. Seuss, Lewis Caroll, and Roald Dahl books. Works within appropriate variable scopes. Detects and preserves camelCase/TitleCase/snake_case whenever possible.
 
 ## Installation
